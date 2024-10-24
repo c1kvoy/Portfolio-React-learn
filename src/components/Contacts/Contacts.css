@@ -1,0 +1,12 @@
+.contCont {
+    display: flex;
+    flex-direction: column; /* Устанавливаем направление на столбик */
+    align-items: center; /* Центрируем элементы по горизонтали */
+    margin-top: 10%;
+}
+
+.rightJust {
+    text-align: left;
+    display: flex; /* Убедитесь, что это flex-контейнер */
+    flex-direction: column; /* Устанавливаем направление на столбик для ссылок */
+}
