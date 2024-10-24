@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: 'Aldrich-Regular';
+    src: url('./fonts/aldrichrusbydaymarius.ttf') format('truetype'), 
+         url('./fonts/Aldrich-Regular.woff') format('woff'),
+         url('./fonts/Aldrich-Regular.woff2') format('woff2');
+    font-weight: normal; 
+    font-style: normal; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    background-color: rgb(16, 49, 49);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.NameCont {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease; /* Плавный переход */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.NameCont:hover {
+    transform: translateY(5px);
 }
 
-.App-link {
-  color: #61dafb;
+.avatar {
+    clip-path: circle(50%);
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MyName {
+    border: 2px solid rgb(5, 39, 34);
+    color: rgb(38, 160, 167);
+    font-family: 'Aldrich-Regular', sans-serif;
+    background-color: rgb(23, 71, 66);
+    max-width: 600px;
+    padding: 20px;
+    /* margin: auto; */
+    text-align: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 0 0 rgb(28, 119, 138);
+    border-radius: 7px; /* Скругление углов */
 }
