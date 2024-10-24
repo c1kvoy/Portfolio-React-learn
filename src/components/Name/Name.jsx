@@ -1,5 +1,5 @@
 import React from 'react';
-import avatar from '../avatar.jpg';
+import avatar from '../../avatar.jpg';
 
 const Name = () => {
     return (

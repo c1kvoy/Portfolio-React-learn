@@ -1,7 +1,7 @@
 import React from "react";
 import Name from "./Name/Name";
-import Stack from "./Stack/Stack";
-import Contacts from "./Contacts/Contacts";
+// import Stack from "./Stack/Stack";
+// import Contacts from "./Contacts/Contacts";
 import { useState } from 'react';
 
 const Page = () => {
@@ -12,8 +12,8 @@ const Page = () => {
             <button className="stackButton" onClick={() => setPage("stack")}>Skills</button>
             <button className="contactsButton" onClick={() => setPage("contacts")}>Contacts</button>
             {page === "main" && <Name />}
-            {page === "stack" && <Stack />}
-            {page === "contacts" && <Contacts />}
+            {/* {page === "stack" && <Stack />}
+            {page === "contacts" && <Contacts />} */}
         </div>
     )
 }
