@@ -14,10 +14,12 @@
 .NameCont {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    max-height: 80vh; /* Уменьшенная высота */
+    width: 100%;
     justify-content: center;
     align-items: center;
-    transition: transform 0.3s ease; /* Плавный переход */
+    transition: transform 0.3s ease;
+    margin-top: 60px; /* Плавный переход */
 }
 
 .NameCont:hover {
@@ -42,6 +44,17 @@
     /* margin: auto; */
     text-align: center;
     align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 0 0 rgb(28, 119, 138);
+    border-radius: 7px; /* Скругление углов */
+}
+
+.mainButton {
+    border: 2px solid rgb(5, 39, 34);
+    color: rgb(38, 160, 167);
+    font-family: 'Aldrich-Regular', sans-serif;
+    background-color: rgb(23, 71, 66);
+    padding: 5px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     box-shadow: 5px 5px 0 0 rgb(28, 119, 138);
     border-radius: 7px; /* Скругление углов */
