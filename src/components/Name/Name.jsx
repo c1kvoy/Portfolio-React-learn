@@ -1,5 +1,6 @@
 import React from 'react';
-import avatar from '../../avatar.jpg';
+import avatar from '../../images/avatar.jpg';
+import './Name.css'
 
 const Name = () => {
     return (

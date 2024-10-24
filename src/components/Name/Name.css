@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Aldrich-Regular';
+    src: url('../../fonts/aldrichrusbydaymarius.ttf') format('truetype'), 
+         url('../../fonts/Aldrich-Regular.woff') format('woff'),
+         url('../../fonts/Aldrich-Regular.woff2') format('woff2');
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+
+.NameCont {
+    display: flex;
+    flex-direction: column;
+    max-height: 80vh;
+    max-width: 30%;
+    /* width: 100%; */
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    margin: 60px auto 0;
+    filter: drop-shadow(20px 20px 20px rgba(0,0,0,0.5));
+}
+
+.NameCont:hover {
+    transform: translateY(5px);
+}
+
+.avatar {
+    clip-path: circle(50%);
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    
+}
+
+.MyName {
+    color: rgb(169, 182, 133);
+    font-family: 'Aldrich-Regular', sans-serif;
+    background-color: rgb(46, 55, 54);
+    max-width: 600px;
+    padding: 20px;
+    /* margin: auto; */
+    text-align: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 0 0 rgb(12, 20, 21);
+    border-radius: 7px; /* Скругление углов */
+}

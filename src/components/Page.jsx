@@ -3,6 +3,7 @@ import Name from "./Name/Name";
 // import Stack from "./Stack/Stack";
 // import Contacts from "./Contacts/Contacts";
 import { useState } from 'react';
+import './Page.css'
 
 const Page = () => {
     let [page, setPage] = useState("main");
